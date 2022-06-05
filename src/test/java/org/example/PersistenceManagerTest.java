@@ -8,6 +8,13 @@ public class PersistenceManagerTest {
     }
 
     @Test
+    public void testInitialize(){
+        PersistenceManager pm = createNew();
+        String dbName = "testDB";
+        pm.initialize(dbName);
+    }
+
+    @Test
     public void testSave(){
 
     }
